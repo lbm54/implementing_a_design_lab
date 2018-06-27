@@ -1,0 +1,151 @@
+/******* FONT *********/
+@font-face {
+    font-family: customFont;
+    src: url(./fonts/PlayfairDisplay700.ttf)
+}
+
+@font-face {
+    font-family: customFont;
+    src: url(./fonts/PlayfairDisplay-Bold.woff);
+    font-weight: bold
+}
+
+body {
+    font-family: customFont;
+}
+
+/******* NAVBAR *********/
+.logo {
+    border-style: solid;
+    border-width: 5px;
+    border-color: black;
+    color: red;
+}
+
+.headerNav {
+    display: flex;
+    width: 100%;
+    position: fixed;
+    top: 0;
+    justify-content: space-between;
+    padding: 1rem;
+    z-index: 1;
+    background-color: white;
+}
+
+.nav-links {
+    display: flex;
+    flex-direction: row;
+}
+
+.nav-links > a {
+    color: black;
+    padding-bottom: 10px;
+}
+
+.nav-links > a:hover {
+    border-bottom: red solid 5px;
+}
+
+/******* HEADER *********/
+.headerImage {
+    width: 500px;
+    height: 500px;
+}
+
+.headerTitle {
+    color: orangered;
+    padding-bottom: 10px;
+    font-size: 4rem;
+}
+
+.headerText {
+    position: relative;
+    top: 350px;
+    left: -100px;
+    font-size: 2rem;
+    padding: 0px;
+    margin: 0px;
+}
+
+.headerContainer{
+    margin-top: 100px;
+    margin-bottom: 150px;
+    display: flex;
+    flex-direction: horizontal;
+    justify-content: center;
+}
+
+/******* ABOUT *********/
+.aboutParagraph {
+    border-style: solid;
+    border-color: black;
+    background-color: white;
+    padding: 20px;
+    max-width: 500px;
+    color: rgb(117, 111, 111);
+}
+
+.h4Grey {
+    color: rgba(117, 111, 111, 0.582);
+}
+
+.h4GreyBold {
+    color: rgba(117, 111, 111, 0.836);
+}
+
+/******* EXPERIENCE *********/
+.experienceIcon {
+    width: 25px;
+    height: 25px;
+}
+
+.experienceTitle {
+    display: flex;
+    justify-content: space-between;
+    /* border-style: solid; */
+    border-bottom: 1px solid black;
+    padding-bottom: 5px;
+}
+
+.experienceBody {
+    color: rgb(117, 111, 111);
+    padding-top: 7px;
+}
+
+/******* WORK *********/
+.workImage {
+    width: 100%;
+    max-height: 400px;
+    max-width: 400px;
+    padding: 1px 1px 1px 1px;
+}
+
+/******* CONTACT *********/
+.form-control {
+    background-color: rgba(117, 111, 111, 0.068);
+}
+
+input.form-control::placeholder, textarea.form-control::placeholder {
+    color: rgba(117, 111, 111, 0.575);
+    font-style: italic;
+    padding: 5px;
+}
+
+/******* FOOTER *********/
+.footerIcon {
+    height: 50px;
+    width: 50px;
+}
+
+.footerText {
+    color: rgba(0, 0, 0, 0.637);
+    font-style: italic;
+    padding-left: 2rem;
+    padding-right: 2rem;
+}
+
+.footerContainer {
+    margin-top: 2rem;
+    border-top: solid black 3px;
+}
